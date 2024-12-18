@@ -1,6 +1,6 @@
 import { createRouter, createWebHistory } from 'vue-router';
 
-const routes = [{ path: '/', component: () => import('@/App.vue') }];
+const routes = [{ path: '/', component: () => import('@/layout/Index.vue') }];
 
 const router = createRouter({
   history: createWebHistory(),
