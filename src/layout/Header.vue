@@ -7,6 +7,7 @@
     left-0
     top-0
     c-white
+    z-999
   >
     <div flex="~ items-center">
       <Logo @click="$router.go(0)" cursor-pointer />
@@ -18,7 +19,6 @@
 
 <script setup lang="ts">
 import Nav from './Nav.vue';
-import Theme from './Theme.vue';
 import { useGlobalStore } from '@/pinia';
 
 const { scrollPercent } = storeToRefs(useGlobalStore());

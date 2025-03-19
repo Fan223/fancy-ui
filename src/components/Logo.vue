@@ -1,16 +1,13 @@
 <template>
-  <div
-    :style="{ padding: padding, background: 'var(--main-gradient)' }"
-    h-fit
-    w-fit
+  <Aurora
+    :style="{ height: props.height, width: props.width, padding: padding }"
   >
     <div
       :style="{
-        height: height,
-        width: width,
         padding: padding,
         background: '#1a1a1a',
       }"
+      h-full
       flex
       c-white
     >
@@ -42,19 +39,18 @@
         />
       </svg>
     </div>
-  </div>
+  </Aurora>
 </template>
 
 <script setup lang="ts">
-const props = defineProps({
-  height: {
-    type: String,
-    default: '2.5rem',
-  },
-  width: {
-    type: String,
-    default: '2rem',
-  },
+interface Props {
+  height?: string;
+  width?: string;
+}
+
+const props = withDefaults(defineProps<Props>(), {
+  height: '3rem',
+  width: '2.5rem',
 });
 
 const padding = computed(() => {

@@ -1,5 +1,6 @@
 /**
  * 节流函数. 在指定时间间隔内, 函数只会执行一次.
+ *
  * @param func Function
  * @param delay millisecond
  * @returns Function
@@ -28,6 +29,7 @@ export function throttle<T extends (...args: any[]) => any>(
 
 /**
  * 节流 Ref.
+ *
  * @param value any
  * @param delay millisecond
  * @returns customRef

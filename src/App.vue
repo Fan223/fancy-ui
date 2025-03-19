@@ -1,16 +1,11 @@
 <template>
-  <Aurora />
+  <Banner />
   <Starry />
-
-  <RouterView v-slot="{ Component }">
-    <KeepAlive>
-      <component :is="Component" />
-    </KeepAlive>
-  </RouterView>
+  <RouterView />
 </template>
 
 <script setup lang="ts">
-import Aurora from './Aurora.vue';
+import Banner from './Banner.vue';
 import Starry from './Starry.vue';
 </script>
 

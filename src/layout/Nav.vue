@@ -23,18 +23,15 @@ import { useNavStore } from '@/pinia';
 const { active } = storeToRefs(useNavStore());
 const menus = [
   { name: '首页', path: '/home' },
-  { name: '资源导航', path: '/nav' },
   { name: '博客', path: '/blog' },
+  { name: '资源导航', path: '/resource' },
   { name: '在线工具', path: '/tool' },
   { name: '关于', path: '' },
 ];
 </script>
 
 <style scoped lang="scss">
-.active {
-  background: var(--background-trans);
-}
-
+.active,
 li:hover {
   background: var(--background-trans);
 }

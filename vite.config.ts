@@ -12,10 +12,13 @@ export default defineConfig({
     UnoCSS(),
     AutoImport({
       imports: ['vue', 'vue-router', 'pinia'],
-      dirs: ['src/request'],
+      dirs: ['src/request', 'src/router'],
       vueTemplate: true,
     }),
     Components(),
   ],
-  server: { port: 80, proxy: { '/fancy': 'http://localhost:9000' } },
+  server: {
+    port: 80,
+    proxy: { '/fancy': 'http://localhost:9000' },
+  },
 });

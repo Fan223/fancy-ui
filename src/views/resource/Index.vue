@@ -1,7 +1,5 @@
 <template>
-  <main>
-    <RouterView />
-  </main>
+  <div h-300>Resource</div>
 </template>
 
 <script setup lang="ts"></script>

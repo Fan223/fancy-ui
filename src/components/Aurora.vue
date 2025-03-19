@@ -1,5 +1,7 @@
 <template>
-  <div h-300>Nav</div>
+  <div style="background: var(--main-gradient)">
+    <slot />
+  </div>
 </template>
 
 <script setup lang="ts"></script>

@@ -4,13 +4,21 @@ body {
   margin: 0;
 }
 
+/* prettier-ignore */
 :root {
-  /* prettier-ignore */
+  // 主渐变颜色
   --main-gradient: linear-gradient(130deg, #24c6dc, #5433ff 41.07%, #ff0099 76.05%);
+  // 主过渡动画
   --main-transition: all 0.5s ease-in-out;
+  // 加强文字颜色
+  --text-strong: #7aa2f7;
+  // VIP 文字颜色
+  --text-vip: #fb923c;
 
+  // 背景颜色, 设置为主背景颜色
   background-color: var(--background-primary);
+  // 文本颜色, 设置为正常文本颜色
   color: var(--text-normal);
-  /* prettier-ignore */
+  // 滚动条颜色
   scrollbar-color: var(--background-scrollbar-thumb) var(--background-scrollbar-track);
 }
